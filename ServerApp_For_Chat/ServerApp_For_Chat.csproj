@@ -5,8 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Chat\" />
+    <Compile Remove="Chat\**" />
+    <Content Remove="Chat\**" />
+    <EmbeddedResource Remove="Chat\**" />
+    <None Remove="Chat\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ChatLogic\client\chatClient\.vs\chatClient\v14\" />
+    <Folder Include="ChatLogic\client\chatClient\chatClient\obj\Debug\TempPE\" />
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ChatLogic\client\chatClient\chatClient.sln" />
+    <None Include="ChatLogic\client\chatClient\chatClient\App.config" />
+    <None Include="ChatLogic\client\chatClient\chatClient\bin\Debug\chatClient.exe.config" />
+    <None Include="ChatLogic\client\chatClient\chatClient\bin\Debug\chatClient.vshost.exe.config" />
+    <None Include="ChatLogic\client\chatClient\chatClient\chatClient.csproj" />
   </ItemGroup>
 
   <ItemGroup>
